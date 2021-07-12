@@ -27,6 +27,12 @@ class ItemDetailViewController: UIViewController {
         itemDescriptionLabel.text = item.description
     }
     
+//    func setItem(item: Item) {
+//        self.item = item
+//    }
+}
+
+extension ItemDetailViewController: ItemDetailDelegate {
     func setItem(item: Item) {
         self.item = item
     }
