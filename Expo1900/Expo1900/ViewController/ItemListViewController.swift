@@ -10,22 +10,10 @@ import UIKit
 class ItemListViewController: UIViewController {
     @IBOutlet private weak var itemListTableView: UITableView!
     private var items = [Item]()
-    weak var delegate: ItemDetailDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initItems()
-    }
-  
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let indexPath = itemListTableView.indexPathForSelectedRow else {
-            return
-        }
-        guard let itemDetailView = segue.destination as? ItemDetailViewController else {
-            return
-        }
-        delegate = itemDetailView
-        delegate?.setItem(item: items[indexPath.row])
     }
 }
 
@@ -62,6 +50,10 @@ extension ItemListViewController: JSONDecodable {
     }
 }
 
-protocol ItemDetailDelegate: AnyObject {
-    func setItem(item: Item)
+extension ItemListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let itemDetailViewController = ItemDetailViewController(item: items[indexPath.row])
+        
+        navigationController?.pushViewController(itemDetailViewController, animated: true)
+    }
 }

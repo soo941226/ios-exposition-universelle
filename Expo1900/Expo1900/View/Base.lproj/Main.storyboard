@@ -170,12 +170,12 @@
                                             <outlet property="itemImageView" destination="8Ca-JM-kz5" id="4n4-Gs-Dax"/>
                                             <outlet property="itemNameLabel" destination="aFd-PB-bDb" id="XTw-8O-R0L"/>
                                             <outlet property="itemShortDescriptionLabel" destination="0zq-uV-vDI" id="48Q-QY-Gps"/>
-                                            <segue destination="m8p-9c-zh9" kind="show" identifier="detailSegue" id="nS1-7k-Evr"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="uqk-lu-jY8" id="8P7-vj-Rr2"/>
+                                    <outlet property="delegate" destination="uqk-lu-jY8" id="W3b-G3-hh5"/>
                                 </connections>
                             </tableView>
                         </subviews>
