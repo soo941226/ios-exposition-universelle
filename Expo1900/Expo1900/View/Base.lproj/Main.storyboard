@@ -200,7 +200,7 @@
         <!--Item Detail View Controller-->
         <scene sceneID="YE3-KF-jET">
             <objects>
-                <viewController id="m8p-9c-zh9" customClass="ItemDetailViewController" customModule="Expo1900" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailVC" id="m8p-9c-zh9" customClass="ItemDetailViewController" customModule="Expo1900" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6EV-Oo-YSz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -254,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkU-PN-ENr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3547.826086956522" y="137.94642857142856"/>
+            <point key="canvasLocation" x="3542" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MLy-1R-huv">
