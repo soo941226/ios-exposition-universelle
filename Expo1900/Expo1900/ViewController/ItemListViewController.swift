@@ -52,16 +52,18 @@ extension ItemListViewController: JSONDecodable {
 
 extension ItemListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let itemDetailViewController = ItemDetailViewController(item: items[indexPath.row])
         
-        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "detailVC") as? ItemDetailViewController else {
-            return
-        }
-        detailVC.setItem(item: items[indexPath.row])
+        /// 그냥 push 하는 일반적인 경우
+//        guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "detailVC") as? ItemDetailViewController else {
+//            return
+//        }
+//        detailVC.setItem(item: items[indexPath.row])
+//        navigationController?.pushViewController(detailVC, animated: true)
         
         
-//        let detailVC = ItemDetailViewController(item: items[indexPath.row])
-//        let detailVC = ItemDetailViewController(coder: <#T##NSCoder#>)
+        /// 생성자로 넘겨주는 부분
+        let detailVC = ItemDetailViewController(item: items[indexPath.row])
+
         navigationController?.pushViewController(detailVC, animated: true)
     }
 }
