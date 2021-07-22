@@ -18,6 +18,7 @@
 | 뷰컨트롤러 간 데이터 전달 | Segue, Cofigure, Delegation, Closure... |
 | 접근성 | * Voice over <br/> * Dynamic type |
 | Protocol Oriented Programming(POP) | Protocol + Extension |
+| UML | ![image](./UML/step1_UML.png) |
  
 | 2주차 공부 주제 | 내용 |
 | --- | --- |
