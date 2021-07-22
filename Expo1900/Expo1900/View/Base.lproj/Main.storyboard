@@ -20,10 +20,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIz-DO-rQi" userLabel="ContentsView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="464"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="981"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-ro-h3Z">
-                                                <rect key="frame" x="16" y="40" width="382" height="408"/>
+                                                <rect key="frame" x="16" y="40" width="382" height="925"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odo-b9-j0n">
                                                         <rect key="frame" x="169.5" y="0.0" width="43.5" height="30"/>
@@ -63,17 +63,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tIe-zn-kV0">
-                                                        <rect key="frame" x="66.5" y="358" width="249" height="50"/>
+                                                        <rect key="frame" x="66.5" y="358" width="249" height="567"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="YVv-NO-xK7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="567"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="50" id="iRr-yO-3mb"/>
                                                                     <constraint firstAttribute="width" constant="50" id="jwq-Et-Eh4"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cR-hn-mNU">
-                                                                <rect key="frame" x="60" y="0.0" width="129" height="50"/>
+                                                                <rect key="frame" x="60" y="0.0" width="129" height="567"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                                 <state key="normal" title="한국의 출품작 보러가기"/>
                                                                 <connections>
@@ -81,7 +80,7 @@
                                                                 </connections>
                                                             </button>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="AZN-Ua-IQZ">
-                                                                <rect key="frame" x="199" y="0.0" width="50" height="50"/>
+                                                                <rect key="frame" x="199" y="0.0" width="50" height="567"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="F0J-U5-UfY"/>
                                                                 </constraints>
